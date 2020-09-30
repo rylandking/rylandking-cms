@@ -9,6 +9,11 @@ export default {
 			type: 'string',
 		},
 		{
+			name: 'excerpt',
+			title: 'Excerpt',
+			type: 'string',
+		},
+		{
 			name: 'content',
 			title: 'Content',
 			type: 'array',
@@ -22,12 +27,17 @@ export default {
 				{
 					type: 'youtube',
 				},
+				{
+					type: 'twitter',
+				},
 			],
 		},
 		{
-			name: 'excerpt',
-			title: 'Excerpt',
+			name: 'tweetEmbed',
+			title: 'Tweet Link',
 			type: 'string',
+			description:
+				'Paste the link to the tweet here. Example: "https://twitter.com/herenowbody/status/1265632297388138497?s=20"',
 		},
 		{
 			name: 'coverImage',

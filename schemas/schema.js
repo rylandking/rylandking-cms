@@ -7,6 +7,7 @@ import author from './author';
 import post from './post';
 import youtube from './youtube';
 import figure from './figure';
+import twitter from './twitter';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -14,5 +15,5 @@ export default createSchema({
 	name: 'default',
 	// Then proceed to concatenate our document type
 	// to the ones provided by any plugins that are installed
-	types: schemaTypes.concat([author, post, youtube, figure]),
+	types: schemaTypes.concat([author, post, youtube, figure, twitter]),
 });
